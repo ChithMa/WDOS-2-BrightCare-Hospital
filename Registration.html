@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css/Headers.css">
+    <link rel="stylesheet" href="Style.css/Footer.css">
+    <link rel="stylesheet" href="Style.css/REGISTRATION.CSS">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Registration</title>
+</head>
+<body>
+    <header>
+        <div class="LOGO-row">
+            <img src="Icons/BRIGHTCARE_LOGO_REMOVED_BG.png" alt="LOGO">
+            <a class="appointment" href="Registration.html">
+                Book an Appointment
+            </a>
+        </div>
+
+
+        <nav>
+
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-btn">☰ </label>
+                <ul class="link-bar" type="none">
+                    <li><a href="index.html" class="page-links">Home</a></li>
+                    <li><a href="Services.html"class="page-links">Services</a></li>
+                    <li><a href="Doctors.html"class="page-links">Doctors</a></li>
+                    <li><a href="Consulting_Reservation.html"class="page-links">Reservation</a></li>
+                    <li><a href="Pharmacy.html"class="page-links">Pharmacy</a></li>
+                    <li><a href="About.html"class="page-links">About</a></li>
+                </ul>
+                
+
+        </nav>
+        
+    </header>
+
+    <main>
+        <div class="hero-container-Registration"></div>
+        <div class="main-container">
+            <div class="Registration">  
+                <div id="Regist" class="Registration-fields">
+                    <form action="#" method="post" id="Registration-form">
+                    
+                        <fieldset class="fieldset">
+                            <legend>Patient Information</legend>
+                            <br>
+                            <label for="name">Full Name: </label><br>
+                            <input type="text" id="name" name="Name" required>
+                            <br><br>
+                            <label for="birthday">Date of Birth: </label><br>
+                            <input type="date" id="BD" name="BD" required>
+                            <br><br>
+                            <label>Gender:</label><br>
+                            <input type="radio" id="male" name="Gender" value="male">
+                            <label for="make">Male</label>
+                            <br>
+                            <input type="radio" id="Female" name="Gender" value="Female">
+                            <label for="Female">Female</label>
+                            <br>
+                            <input type="radio" id="Other" name="Gender" value="Other">
+                            <label for="Other">Other</label><br>
+                            <br><br>
+                            <label for="loation">Location:</label><br>
+                            <input type="text" id="loation" name="location" required>
+                            <br><br>
+                            <label for="mobile-no">Moblie Number:</label><br>
+                            <input type="text" id="mobile-no" name="mobile-no" required>
+                            <br><br>
+                            <label for="m-history">Medical History:</label><br>
+                            <input type="text" id="m-history" name="m-history" required>
+                            <br><br>
+                            <label for="Doctor-speciality">Preffered Doctor: </label><br>
+                            <select name="Speciality" id="Doctors">
+                                <option value="Doctors1">Dr. Michael Harris</option>
+                                <option value="Doctors2">Dr. David Collins</option>
+                                <option value="Doctors3">Dr. Emily Parker</option>
+                                <option value="Doctors4">Dr. Sarah Bennett</option>
+                                <option value="Doctors5">Dr. John Matthews</option>
+                                <option value="Doctors6">Dr. Emma Johnson</option>
+                            </select>
+                            <br><br>
+                            <label for="email">E-mail:</label><br>
+                            <input type="email" id="E-mail" name="E-mail" required>
+                            <br><br>
+                        </fieldset>
+                        <div class="button">
+                            <button type="submit">Submit</button>
+                            <button type="reset">Clear</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
+            <div class="left-container">
+                <div class="L-box address">
+                    <h2>Address</h2>
+                    <p>Brightcare Hospital <br>
+                        123 Wellness Avenue <br>
+                        Healthcare District <br>
+                        75008 Paris, <br> 
+                        France
+                    </p>
+                </div>
+
+                <div class="L-box Helpline">
+                    <h2>Helpline</h2>
+                    <p>General Inquiries: +33 1 23 45 67 89</p>
+                    <p>Emergency Helpline: +33 1 98 76 54 32</p>
+                </div>
+
+                <div class="L-box fax">
+                    <h2>Fax</h2>
+                    <p>+33 1 23 45 67 90</p>
+                </div>
+
+                <div id="hotline" class="L-box A&E">
+                    <h2>Accident & Emergency</h2>
+                    <h3>1122</h3>
+                </div>
+
+                <div class="L-box e-mail">
+                    <h2>E-mail</h2>
+                    <p>Brightcare@gmail.com</p>
+                </div>
+
+                <div class="L-box hours">
+                    <h2>Consultation Hours</h2>
+                    <p>
+                        Monday to Friday : 8:00 AM – 6:00 PM <br>
+                        Saturday  : 9:00 AM – 1:00 PM <br>
+                        Sunday  : Closed
+                    </p>
+                </div>
+
+                <div class="logo">
+                    <img src="Icons/LOGO.png" alt="LOGO">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logo-column center-content">
+            
+            <img  src="Icons/BRIGHTCARE_LOGO_REMOVED_BG.png" alt="LOGO"><br><br>
+            <p>"BrightCare Hospital is committed to providing top-quality care with a compassionate touch. Our skilled team uses advanced technology to ensure your health and well-being, making your care our top priority every day."</p>
+            
+        </div>
+        
+        <div class="address-column">
+            <h2>Address:</h2>
+            <p>Brightcare Hospital <br>
+                123 Wellness Avenue <br>
+                Healthcare District <br>
+                75008 Paris, <br>
+                France</p>
+
+            <h2>Location</h2>
+            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22406.709485773663!2d79.86249385522733!3d6.892559076346246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25a2bdcb662c5%3A0xcf6dc296a34a0c21!2sKings%20Hospital%20Colombo!5e0!3m2!1sen!2slk!4v1726090193496!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="contact-column">
+            <h2>Contact us</h2>
+            <div>
+                <p>Phone numers:</p>
+                <ul type="none">
+                    <li> +33 1 23 45 67 89</li>
+                    <li> +33 1 98 76 54 32</li>
+                </ul>
+                <p>E-mail:</p>
+                <ul type="none">
+                    <li>Brightcare@gmail.com</li>
+                </ul>
+                <br>
+                <h2>Follow Us</h2>
+                <div id="social-media">
+                    <a href="instagram.com"><img class="icon" id="insta" src="Icons/instagram icon.png" alt="instagram"></a>
+                    <a href="facebool.com"><img class="icon" src="Icons/Facebook logo1.png" alt="Facebook"></a>
+                    <a href="youtube.com"><img class="icon" src="Icons\Youtube icon.png" alt="YouTube"></a>
+                    <a href="linkedin.com"><img class="icon" id="Linkedin"src="Icons/Linkedin icon.png" alt="Linkedin"></a>
+                </div>
+
+            </div>
+            
+
+        </div>
+        
+    </footer>
+</body>
+</html>

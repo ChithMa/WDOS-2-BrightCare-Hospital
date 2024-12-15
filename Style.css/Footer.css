@@ -1,0 +1,88 @@
+
+
+footer {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(5, 55, 131);
+    margin-bottom: 0;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items:start;
+    justify-content: space-around;
+    color: rgb(208, 242, 247);
+    position: relative;
+    top: -10px;
+    border-top-right-radius: 70px;
+    border-top-left-radius: 70px;
+    padding-bottom: 100px;
+}
+
+.address-column, .logo-column, .contact-column {
+    width: 300px; 
+}
+
+.logo-column img {
+    margin-top: 20px;
+    width: 240px;
+    height: 170px;
+}
+
+.address-column iframe {
+    width: 70%;
+    height: 70%;
+    padding-left: 50px;
+}
+
+#social-media, .icon{
+    display: flex;
+    align-items: center;
+    width: 40px;
+    padding-right: 20px;
+}
+#insta {
+    width: 35px;
+}
+#Linkedin{
+    width: 50px;
+}
+
+.center-content{
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 50px; /* Reduce bottom padding for mobile */
+    }
+
+     .logo-column, .contact-column {
+        width: 100%; /* Make columns full-width */
+        margin-bottom: 30px; /* Add space between stacked columns */
+
+    }
+
+    .logo-column{
+        display: none;
+    }
+    .address-column #location,iframe{
+        display: none;
+    }
+
+    .address-column iframe {
+        width: 90%; /* Adjust iframe width for mobile */
+        height: 200px;
+        padding-left: 0; /* Remove padding for centered content */
+    }
+    #social-media {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+
+        padding-left: 0;
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,258 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+/*Hero image */
+.hero-container-services {
+    background-image: url('../Images/Services\ hero.webp');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 700px;
+    background-position: center;
+    position: relative;
+    display: flex;
+    font-size: 70px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+/*introduction for the services page, row*/
+#services-intro-cantainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 150px;
+}
+/*this is for the blok*/
+#services-intro {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    background: #f9fafa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    background-color: #ebf0f5;
+}
+
+#services-intro button img{
+    width: 55px;
+    height: 55px;
+    padding: 10px;
+}
+#services-intro,h1,p{
+    text-align: center;
+    padding: 30px;
+}
+#services-intro button {
+    border-radius: 70px;
+    margin: 20px;
+    border: none;
+    background-color: #99c7f3 ;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+#services-intro button:hover{
+    cursor: pointer;
+    background-color: #57a6f0;
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+/*link button to registratio page and the tital for the services*/
+
+#services-tital {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+/*Registration   button*/
+#services-tital a {
+    display: block;
+    padding-right: 100px;
+    margin-left: auto;
+    margin-right: 40px;
+    border-radius: 40px;
+    border: none;
+    background-color: rgb(47, 207, 247);
+    padding: 1% 8%;
+    text-decoration: none;
+    color: black;
+
+    animation-name: zoom-in;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes zoom-in{ 
+    from {transform: scale(1,1);}
+    to {transform: scale(1.1,1.1);}
+}
+
+.services-boxs-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 30px;
+    margin-bottom: 200px;
+}
+.box-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.services-box {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    height: 250px;
+    background-color: #dae8f5;
+    border-radius: 10px;
+}
+
+/* For the hover effect on the services box */
+.services-box {
+    position: relative;
+    overflow: hidden;
+}
+.services-box::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 0;
+}
+
+
+.services-box.one::after{
+    background-image: url('../Images/Services\ box\ 1.webp');
+}
+.services-box.two::after{
+    background-image: url('../Images/Services\ box\ 2.webp')
+}
+
+.services-box.three::after{
+    background-image: url('../Images/Services\ box\ 3.webp')
+}
+
+.services-box.four::after{
+    background-image: url('../Images/Services\ box\ 4.webp')
+}
+
+.services-box.five::after{
+    background-image: url('../Images/Services\ box\ 5.webp')
+}
+
+.services-box.six::after{
+    background-image: url('../Images//Services\ box\ 6.webp')
+}
+/*
+.services-box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.pexels.com/photos/3845126/pexels-photo-3845126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 0;
+}
+*/
+.services-box:hover::after {
+    opacity: 0.5; /* Controls the opacity of the image */
+    cursor: pointer;
+}
+
+.services-box h3, .services-box p {
+    position: relative;
+    z-index: 1; /* Ensures the text stays above the image */
+    color: inherit; /* Keeps the text color unchanged */
+}
+
+
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 700px) {
+
+    /* Adjusting the main container of services */
+    .services-boxs-row {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    /* Services boxes adjustments for smaller screens */
+    .services-box {
+        width: 90%; /* Make boxes take up most of the screen width */
+        margin: 20px 0;
+        height: auto;
+    }
+
+    /* Adjusting text inside the services boxes */
+    .services-box h3 {
+        font-size: 1.5rem; /* Adjust font size for mobile view */
+    }
+    
+    .services-box p {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /* Reduce the size of hero section on mobile */
+    .hero-container-services {
+        background-image: url('../Images/Services\ hero\ mobile.webp');
+        height: 400px;
+        font-size: 40px;
+    }
+
+    /* Adjust the intro container and content width */
+    #services-intro-cantainer {
+        bottom: 0;
+        flex-direction: column; /* Stack the content in a column */
+        padding: 10px;
+    }
+
+    #services-intro {
+        width: 100%;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #services-tital{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+
+    #services-tital button {
+        padding: 1% 6%;
+        font-size: 0.9rem;
+        
+    }
+    #services-intro-cantainer img {
+        display: none;
+    }
+
+
+}

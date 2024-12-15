@@ -1,0 +1,193 @@
+.hero-container-About{
+    background-image: url('../Images/About\ hero.webp');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 700px;
+    background-position: center;
+    position: relative;
+    display: flex;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    
+}
+
+#vision-mition {
+    display: flex;
+    align-items: center;
+    position: relative ;
+    bottom: 150px;
+    z-index: 2;
+    background-color: white;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 30px;
+    background-color: #d9e8f5;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+#vision-mition img{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin: 0 ;
+    width: 45%;
+    height: 390px;
+
+}
+
+.visionmition {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+/* Branches container styling */
+.branches-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Branch-box {
+    position: relative;
+    width: 30%;
+    background-color: #c5e3eb;
+    margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Branch-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.branches-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.branches-container h3 {
+    margin: 0;
+    font-size: 1.5em;
+
+}
+
+
+
+.Branch-box:hover .branches-container {
+    display: block;
+}
+
+.Branch-box p {
+    margin: 10px, 10px;
+    padding: 15px;
+}
+
+.Branch-box .map{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+}
+.Branch-box img{
+    height: 300px;
+    width: 100%;
+}
+
+
+
+
+.table{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+table{
+    width: 98%;
+    height: 500px;
+    border: solid 1px black;
+    margin-bottom: 200px;
+    margin-top: 100px;
+}
+
+th{
+    text-align: left;
+}
+
+thead{
+    height: 40px;
+    background-color: #d9e8f5;
+}
+
+
+/* For mobile devices (width below 768px) */
+@media only screen and (max-width: 700px) {
+    .hero-container-About {
+        background-image: url('../Images/About\ mobile.png');
+        height: 400px;
+        font-size: 30px;
+    }
+
+    #vision-mition {
+        bottom: 100px;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        box-shadow: none;
+    }
+
+    .branches-container {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .Branch-box {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    table {
+        width: 10px;
+        height: 20px;
+    }
+
+    .visionmition h2 {
+        font-size: 1.2em;
+    }
+
+    .visionmition p {
+        font-size: 1em;
+    }
+
+    .Branch-box h3 {
+        font-size: 1.3em;
+    }
+
+    .Branch-box p {
+        font-size: 0.9em;
+    }
+
+    .Branch-box button {
+        padding: 8px 15px;
+        font-size: 1em;
+    }
+
+    #vision-mition img{
+        display: none;
+    }
+    #vision-mition{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+

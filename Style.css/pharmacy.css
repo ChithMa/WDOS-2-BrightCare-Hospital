@@ -1,0 +1,376 @@
+footer{
+    margin-top: 100px;
+}
+
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-container-Pharmacy {
+    background-image: url('../Images/Pharmacy\ hero.webp');
+    background-size: cover;
+    height: 700px;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+}
+
+/* add to cart icon */
+
+#addToCartIcon{
+    width: 35px;
+    padding-left: 70px;
+    margin-right: -60px;
+}
+
+.topCartQuantity{
+    position: relative;
+    bottom: 14px;
+    left: 47px;
+    padding: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 50px;
+    background-color: blue;
+}
+
+.pharmacy-services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PS-box {
+    background-color: lightblue;
+    margin: 30px;
+    border-radius: 20px;
+    text-align: center;
+    height: 200px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-container-Pharmacy .hero-para{
+    width: 40%;
+    text-align: center;
+    margin-left: 9%;
+
+}
+.hero-para {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.PS-para {
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 6%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* new content for the pharmacy page */
+
+
+/* .Categories{
+    border: none;
+    background-color: transparent;
+    line-height: 60px;
+    font-size: 22px;
+}
+.Categories:hover{
+    color: blue;
+} */
+
+
+/* Styling for individual grid items */
+/* #grid {
+    display: grid;
+    grid-template-columns: repeat(16,6.25%);
+    grid-template-rows: repeat(16,70px);
+} */
+
+/* inside box changes */
+/* .box{
+    border: 1px solid rgb(241, 241, 241);
+    color: #103178;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-right: 8px;
+} 
+
+.box p{
+    padding-left: 20px;
+}
+.medicineExplaination {
+    font-size: 14px;
+}*/
+
+
+
+/* catagarise in to grid cells */
+/* #box1 {
+    padding-left: 40px;
+    border: none;
+    grid-area: 1 / 1 / 17 / 4; 
+    line-height: 65px;   
+} */
+
+
+/* categories */
+.Categories-container{
+    position: absolute;
+    
+   
+    /* margin-right: 1000px; */
+}
+
+.CategoriesBtn{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    line-height: 65px;
+}
+.CategoriesBtn:hover{
+    color: blue;
+}
+
+
+
+
+
+/* medicines */
+.js-products-grid{
+    /* display: flex;
+    flex-direction: row; */
+    flex-wrap: wrap;
+
+    /* position: relative; */
+    /* left: 250px; */
+    width: 80%;
+    /* background-color: green; */
+}
+/* .categoryName{
+    display: flex;
+    flex-direction: row;
+    background-color: green;
+}
+.categories{
+    display: flex;
+    flex-direction: row;
+} */
+
+.categories{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.product-container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(241, 241, 241);
+    width: 241px;
+    padding-left: 10px;
+}
+
+.quantity-selector{
+    margin-bottom: 30px;
+    margin-left: 25%;
+}
+.quantity-input{
+    width: 25px;
+}
+
+.addToCartBtn{
+    border: none;
+    border-radius: 50px;
+    padding-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-bottom: 10px;
+    background-color: rgb(54, 134, 253);
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.addToCartBtn:hover{
+    opacity: 0.5;
+}
+.addToCartBtn:active{
+    background-color: rgb(0, 106, 255);
+}
+
+
+/* cart table */
+.cart-table{
+    width: 95%;
+    margin-top: 50px;
+    
+}
+.cart-table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse; /*this will remove the space between cells*/
+    
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.underTableBns{
+    border: none;
+    text-align: center;
+}
+
+.button {
+    border: none;
+    border-radius: 50px;
+    padding-top: 10px;
+    margin-left: 40px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(54, 134, 253);
+    color: white;
+}
+
+.button:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 700px) {
+    .hero-container-Pharmacy .hero-para {
+        width: 90%;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 200px;
+        margin-bottom: auto;
+    }
+
+    .pharmacy-services {
+        flex-direction: column;
+        align-items: stretch;
+        margin-left: 60px;
+        margin-right: 60px;
+
+    }
+
+    #PS-box {
+        width: 100%;
+        height: auto;
+        margin: 0.5rem 0;
+
+
+    }
+
+    #PS-para {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .button {
+        width: 80%;
+        font-size: 1rem;
+    }
+    .hero-container-Pharmacy{
+        background-image: url('../Images/Pharmacy\ hero\ mobile.jpg');
+        height: 500px;
+        background-attachment: fixed;
+    }
+
+     /* Adjusting the cart table */
+     .cart-table {
+        font-size: 12px;
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .btns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        width: 100%;
+        font-size: 14px;
+        margin: 0.5rem 0;
+    }
+
+}

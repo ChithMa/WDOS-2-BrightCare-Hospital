@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css/RESERVATION FORM.CSS">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Reservation form</form></title>
+</head>
+<body>
+        <div class="button-back">
+            <a href="Consulting_Reservation.html">
+                <button>Back</button>
+            </a>
+            
+        </div>
+        <h1>Reservation</h1>
+        <div class="Reservation">  
+            <div class="Reservation-fields">
+                <form action="#" method="post" id="Reservation-form">
+                   
+                    <fieldset class="fieldset">
+                        <legend>Patient Information</legend>
+                        <br>
+                        <label for="name">Name: </label><br>
+                        <input type="text" id="name" name="Name" required>
+                        <br><br>
+                        <label for="birthday">Date of Birth: </label><br>
+                        <input type="date" id="BD" name="BD" required>
+                        <br><br>
+                        <label for="mobile-no">Moblie Number:</label><br>
+                        <input type="text" id="mobile-no" name="mobile-no" required>
+                        <br><br>
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="E-mail" name="E-mail" required>
+                        <br><br>
+                    </fieldset>
+        
+                    <fieldset class="fieldset">
+                        <legend>Consultation Details</legend>
+                        <br>
+                        <label for="Consultation-date">Preffered Date: </label><br>
+                        <input type="date" id="Consultation-date" name="Consultation-date" required>
+                        <br><br>
+                        <label for="Consultation-time">Preffered Time: </label><br>
+                        <input type="time" id="Consultation-time" name="Consultation-time">
+                        <br><br>
+                        <label for="Doctor-speciality">Doctor Speciality: </label><br>
+                        <select name="Speciality" id="Speciality">
+                            <option value="Speciality1">Cardiology</option>
+                            <option value="Speciality2">Orthopedics</option>
+                            <option value="Speciality3">Neurology</option>
+                            <option value="Speciality4">General Surgery</option>
+                            <option value="Speciality5">Pediatrics</option>
+                            <option value="Speciality6">Internal Medicine</option>
+                            <option value="Speciality7">Oncology</option>
+                            <option value="Speciality8">Orthopedics</option>
+                            <option value="Speciality9">Urology</option>
+                        </select>
+                        <br><br>
+                        <label for="Choose Doctor">Choose Doctor: </label><br>
+                        <select name="doctors" id="doctors-name">
+                            <option value="name1">Dr. Michael Harris</option>
+                            <option value="name2">Dr. David Collins</option>
+                            <option value="name3">Dr. Emily Parker</option>
+                            <option value="name4">Dr. Sarah Bennett</option>
+                            <option value="name4">Dr. John Matthews</option>
+                            <option value="name4">Dr. Emma Johnson</option>
+                        </select>
+                    </fieldset>
+        
+                    <fieldset class="fieldset">
+                        <legend>Additionla Information</legend>
+                        <br>
+                        <label for="Reason">Reason for consultation: </label><br>
+                        <input type="text" id="Reason" name="Reason">
+                        <br><br>
+                        <label for="Requests">Any Special Requests: </label><br>
+                        <input type="text" id="Requests" name="Requests">
+                        <br><br>
+                    </fieldset>
+                    <div class="button">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Clear</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+</body>
+</html>

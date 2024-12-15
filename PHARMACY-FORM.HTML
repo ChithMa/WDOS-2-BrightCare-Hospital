@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Style.css/PHARMACY-FORM.css">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="theme-color" content="#ffffff">
+
+        <title>Reservation form</form></title>
+    </head>
+    <body>
+            <div class="button-back"><!--Back button to pharmacy page-->
+                <a href="Pharmacy.html">
+                    <button>Back</button>
+                </a>  
+            </div>
+            <h1>Medicine Purchase Form</h1>
+            <div class="Purchase">  
+                <div class="Purchase-fields">
+                    <form action="#" method="post" id="Purchase-form">
+                    
+                        <fieldset class="fieldset">
+                            <legend>Patient Information</legend>
+                            <br>
+                            <label for="name">Full Name: </label><br>
+                            <input type="text" id="name" name="Name" required>
+                            <br><br>
+                            <label for="mobile-no">Moblie Number:</label><br>
+                            <input type="text" id="mobile-no" name="mobile-no" required>
+                            <br><br>
+                            <label for="address">Address:</label><br>
+                            <input type="text" name="address" id="address">
+                            <br><br>
+                            <label for="email">E-mail:</label><br>
+                            <input type="email" id="E-mail" name="E-mail" required>
+                            <br><br>
+                        </fieldset>
+            
+
+                        <!-- the table of cart details in form -->
+                        <fieldset class="fieldset">
+                            <legend>Cart details</legend>
+                            <br>
+                            
+                            <table class="formCartTable">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Price</th>
+                                        <th>Units Bought</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Cart items will be rendered here -->
+                                </tbody>
+                            </table>
+
+                            <div id="confirmBtn">
+                                <button type="button">Confirm</button>
+                            </div>
+                            
+                            
+                        </fieldset>
+            
+                        <fieldset class="fieldset">
+                            <legend>Payment Details</legend>
+                            <br>
+                            <label for="PaymentType">Payment Type: </label><br><br>
+                            <input type="radio" id="cash" name="PaymentType" value="cash">
+                            <label for="cash">Cash</label>
+                            <br><br>
+                            <input type="radio" id="card" name="PaymentType" value= "card">
+                            <label for="card">Card</label>
+                            <br><br><br>
+
+                            <div id="cardDetails" style="display: none;">
+                                <label for="cardNo">Card Number:</label>
+                                <input type="number" name="cardNo" maxlength="16" id="cardNo" >
+                                <br><br>
+                                <label for="expiryDate">Expiry Date:</label>
+                                <input type="date" name="expiryDate" id="expiryDatex">
+                                <br><br>
+                                <label for="cvv">Enter CVV:</label>
+                                <input type="number" name="cvv" maxlength="3" id="cvv">
+                            </div>
+                        </fieldset>
+
+                        <div class="button">
+                            <button type="submit">Submit</button>
+                            <button type="reset">Clear</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        
+            <script src="scripts/pharmacy-form.js"></script>
+    </body>
+</html>

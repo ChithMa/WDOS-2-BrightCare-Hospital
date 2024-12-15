@@ -1,0 +1,201 @@
+body{
+    background-image: url('../Images/LAB.png');
+    background-size: cover;
+}
+
+.button-back button{
+    padding: 10px 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: blue;
+}
+
+.button-back button:hover {
+    opacity: 0.7;
+}
+
+.button-back button:hover {
+    opacity: 0.5;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+}
+
+.Purchase{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.Purchase-fields{
+    opacity: 0.9;
+    background-color: rgb(234, 240, 243);
+    width: 75%; 
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;   
+    padding-top: 20px;
+}
+
+.fieldset legend{
+    text-align: center;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.fieldset {
+    border: none;
+}
+
+
+/* cart table  */
+
+.formCartTable{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.formCartTable,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.formCartTable,td{
+    text-align: right;
+}
+
+input[type="text"],[type="email"],[type="date"],[type="time"]{
+    width: calc(100% - 50px);
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 20px;
+
+}
+
+
+ 
+
+.Medicine,.Quantity {
+    width: calc(100% - 60%);
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-right: 50px;
+}
+
+#confirmBtn{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 50px;
+}
+#confirmBtn button{
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(47, 207, 247);
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#confirmBtn button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+#confirmBtn button:active{
+    opacity: 0.4;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button[type="submit"], button[type="reset"] {
+    color: white;
+    padding: 10px 120px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+button[type="submit"]{
+    background-color: #45a049;
+    
+}
+button[type="submit"]:hover {
+    background-color: #9feba3;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+}
+
+button[type="reset"]:hover {
+    background-color: #e41e26;
+}
+
+#cardNo{
+    width: 94%;
+    height: 35px;
+    border: 1px rgb(212, 211, 211) solid;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+#cvv{
+    width: 94%;
+    height: 35px;
+    border: 1px rgb(212, 211, 211) solid;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+@media (max-width:700px) {
+    .button{
+        display: flex;
+        flex-direction: column;
+    }
+    .Purchase-fields{
+        width: 95%;
+    }
+    .Quantity{
+        width: 100px;
+    }
+    
+    .formCartTable thead tr {
+        display: none; /* Hide table header for mobile */
+    }
+
+    .formCartTable tr {
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #ddd;
+    }
+
+    .formCartTable td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .formCartTable td::before {
+        content: attr(data-label); /* Use data-label for mobile-friendly titles */
+        font-weight: bold;
+        flex-basis: 50%;
+    }
+    
+}

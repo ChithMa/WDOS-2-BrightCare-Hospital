@@ -1,0 +1,171 @@
+{
+    "medicine":{
+        "Analgesics":[
+            {
+                "image":"Images/products img/Paracetamol.png",
+                "name": "Paracetamol 500mg",
+                "priceCents": "1090",
+                "info":"Paracetamol 500mg is used to relieve pain and reduce fever."
+            },{
+                "image": "Images/products img/Aspirin.png",
+                "name": "MEDI-FIRST Aspirin (325mg)",
+                "priceCents": "1800",
+                "info":"Used for pain relief, fever reduction, inflammation, and blood clot prevention"
+            },{
+                "image": "Images/products img/Ibuprofen.png",
+                "name": "SAFEWAY Ibuprofen 500 Tabletas",
+                "priceCents": "4900",
+                "info": "Used for pain relief, inflammation reduction, and fever management in adults."
+            },{
+                "image": "Images/products img/Tramadol.png",
+                "name": "Tramadol 100mg Tabletas",
+                "priceCents": "3200",
+                "info": "Used for moderate to severe pain relief, often post-surgery or injury."
+            },{
+                "image": "Images/products img/Morphine.png",
+                "name": "Oral Morphine Tablets",
+                "priceCents": "1200",
+                "info": "Powerful opioid for severe pain management under medical supervision."
+            },{
+                "image": "Images/products img/Naproxen.png",
+                "name": "ALEVE LIQUID GELS 220mg (NSAID)",
+                "priceCents": "4600",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            }
+        ],
+        "Antibiotics":[
+            {
+                "image": "Images/products img/Amoxicillin.webp",
+                "name": "Amoxicillin",
+                "priceCents": "1600",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            },{
+                "image": "Images/products img/Ciprofloxacin.webp",
+                "name": "Ciprofloxacin",
+                "priceCents": "3200",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            },{
+                "image": "Images/products img/Azithromycin.webp",
+                "name": "Azithromycin",
+                "priceCents": "1600",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            },{
+                "image": "Images/products img/doxycycline.webp",
+                "name": "Doxycycline",
+                "priceCents": "1600",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            },{
+                "image": "Images/products img/Cephalexin.webp",
+                "name": "Cephalexin ",
+                "priceCents": "2560",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            },{
+                "image": "Images/products img/Metronidazole.webp",
+                "name": "Metronidazole",
+                "priceCents": "2500",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            }
+        ],
+        "Antidepressants":[
+            {
+                "image": "Images/products img/Fluoxetine (Prozac).webp",
+                "name": "Fluoxetine (Prozac)",
+                "priceCents": "1600",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            },{
+                "image": "Images/products img/Sertraline (Zoloft).webp",
+                "name": "Sertraline (Zoloft)",
+                "priceCents": "3200",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            },{
+                "image": "Images/products img/Amitriptyline.webp",
+                "name": "Amitriptyline",
+                "priceCents": "1600",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            },{
+                "image": "Images/products img/Citalopram (Celexa).webp",
+                "name": "Citalopram (Celexa)",
+                "priceCents": "1600",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            },{
+                "image": "Images/products img/Venlafaxine (Effexor).webp",
+                "name": "Venlafaxine (Effexor)",
+                "priceCents": "3200",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            },{
+                "image": "Images/products img/Escitalopram (Lexapro).webp",
+                "name": "Escitalopram (Lexapro) ",
+                "priceCents": "3200",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            }
+        ],
+        "Antihistamines":[
+            {
+                "image": "Images/products img/Diphenhydramine (Benadryl).webp",
+                "name": "Diphenhydramine (Benadryl) ",
+                "priceCents": "4600",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            },{
+                "image": "Images/products img/Cetirizine (Zyrtec).webp",
+                "name": "Cetirizine (Zyrtec)",
+                "priceCents": "4600",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            },{
+                "image": "Images/products img/Loratadine (Claritin).webp",
+                "name": "Loratadine (Claritin)",
+                "priceCents": "4600",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            },{
+                "image": "Images/products img/Fexofenadine (Allegra).webp",
+                "name": "Fexofenadine (Allegra)",
+                "priceCents": "4600",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            },{
+                "image": "Images/products img/Chlorpheniramine.webp",
+                "name": "Chlorpheniramine",
+                "priceCents": "4600",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            },{
+                "image": "Images/products img/Hydroxyxine.webp",
+                "name": "Hydroxyzine",
+                "priceCents": "4600",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            }
+        ],
+        "Antihypertensives":[
+            {
+                "image": "Images/products img/Amlodipine.webp",
+                "name": "Amlodipine ",
+                "priceCents": "4600",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            },{
+                "image": "Images/products img/Lisinopril.webp",
+                "name": "Lisinopril ",
+                "priceCents": "4600",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            },{
+                "image": "Images/products img/Losartan.webp",
+                "name": "Losartan",
+                "priceCents": "4600",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            },{
+                "image": "Images/products img/Metoprolol.webp",
+                "name": "Metoprolol",
+                "priceCents": "4600",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            },{
+                "image": "Images/products img/Hydrochlorothiazide.webp",
+                "name": "Hydrochlorothiazide",
+                "priceCents": "4600",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            },{
+                "image": "Images/products img/Atenolol.webp",
+                "name": "Atenolol ",
+                "priceCents": "4600",
+                "info": "Relieves pain, inflammation, arthritis and  menstrual cramps."
+            }
+        ]
+    
+    }
+}
+

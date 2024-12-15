@@ -1,0 +1,290 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+:root {
+    --bg-color:#2C91F2;
+}
+
+header{
+    background-color: #cae3fa;
+}
+
+
+
+/*LOGO row*/
+
+
+.LOGO-row {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 100px;
+}
+
+.LOGO-row img {
+    width: 12%;
+    padding-bottom: 3px;
+    margin: 2px;
+}
+
+.appointment {
+    display: block;
+    padding-right: 100px;
+    margin-left: auto;
+    margin-right: 0px;
+    border-radius: 40px;
+    border: none;
+    background-color: rgb(47, 207, 247);
+    padding: 1% 5%;
+    text-decoration: none;
+    color: black;
+    animation-name: zoom-in;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+}
+
+
+@keyframes zoom-in{
+    from {transform: scale(1,1);}
+    to {transform: scale(1.1,1.1);}
+}
+
+.appointment:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.appointment:active {
+    opacity: 0.5;
+}
+
+
+
+/*Nav bar*/
+
+nav{
+    background-color: var(--bg-color);
+}
+
+.link-bar{
+    display: flex;
+    justify-content: left;
+}
+
+nav ul li {
+    padding: 0px;
+    padding: 30px;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+nav ul li:hover{
+    background-color: #97c9f8;
+    transition: 1s;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* Hide the menu by default */
+
+.link-bar {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.menu-btn {
+    display: none;
+    background-color: var(--bg-color);
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Hide the menu on smaller screens and use checkbox to toggle */
+.menu-toggle {
+    display: none;
+}
+
+
+/* Media Query for 400px Mobile View */
+@media (max-width:700px) {
+    /*LOGO*/
+    .LOGO-row{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .LOGO-row img{
+        height: 70px;
+        width: 90px;
+        margin-left:0;
+    }
+    /*Appointmrnt button*/
+    .appointment{
+        margin-right: 1%;
+        padding:1px;
+        padding-right: 25px;
+        padding-left: 25px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+
+    /*Nav bar*/
+    .menu-btn{
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top:10px;
+        left: auto;
+        right: 10px;
+        background-color: rgb(230, 240, 243);
+
+    }
+    .link-bar{
+        display: none;
+        flex-direction: column;
+    }
+    .menu-toggle:checked + .menu-btn + .link-bar {
+        display: flex;
+    }
+    nav ul li {
+        text-align: center;
+        padding: 15px;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.link-bar{
+    display: flex;
+    background-color: var(--bg-color);
+    padding: 0px;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+}
+.link-bar a{
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+}
+.link-bar li{
+    padding: 30px;
+    padding-left: 6%;
+    padding-right: 6%;
+
+}
+.link-bar li:hover{
+    background-color: #7abff3;
+    transition: 1s;
+    cursor: pointer;
+}
+*/
+
+
+
+
+
+
+
+
+
+/*
+@media screen and (max-width:600px) {
+    .LOGO-row {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 100px;
+    }
+    
+    .LOGO-row img {
+        width: 25%;
+        padding-bottom: 3px;
+        margin: 2px;
+    }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*navigation bar
+
+.link-bar {
+    list-style-type: none;
+    background-color: var(--bg-color);
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    z-index: 3;
+    font-size: 20px;
+}
+
+
+.link-bar li {
+    float: left;
+
+}
+
+.link-bar a {
+    display: block;
+    text-align: center;
+    padding: 3% 7%;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.link-bar a:hover {
+    cursor: pointer;
+    background-color: #7abff3; 
+    padding:30px;
+}
+.link-bar a:active {
+    opacity: 0.5;
+}
+
+*/
