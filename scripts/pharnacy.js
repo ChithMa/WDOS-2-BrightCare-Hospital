@@ -216,7 +216,7 @@ async function printStuff(){
 
                 <div class="quantity-selector">
                     <label for="quantity-${i}">Quantity:</label>
-                    <input type="number" id="quantity-${i}" class="quantity-input" value="1" min="1">
+                    <input type="number" id="quantity-${i}" class="quantity-input" value="1" min="1" aria-label="Enter quantity">
                 </div>
         
                 <button class="addToCartBtn">
