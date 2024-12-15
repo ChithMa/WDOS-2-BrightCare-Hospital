@@ -194,39 +194,35 @@ async function printStuff(){
     
         // Loop through the Analgesics array and create product HTML
         for (let i = 0; i < categorypath.length; i++) {
-            // console.log(categorypath[i].name);
+    categoryHTML += `
+        <div class="product-container">
+            <div class="product-image-container">
+                <img src="${categorypath[i].image}" alt="${categorypath[i].name}" width="250px" height="300px">
+            </div>
+            
+            <div class="product-name">
+                <p>${categorypath[i].name}</p>
+            </div>
     
-            categoryHTML += `
-            <div class="product-container">
-                <div class="product-image-container">
-                    <img src="${categorypath[i].image}" alt="Paracetamol" width="250px" height="300px">
-                </div>
-                
-                <div class="product-name">
-                    <p>${categorypath[i].name}</p>
-                </div>
-        
-                <div class="product-price">
-                    <p class="Price">RS.${categorypath[i].priceCents}.00</p>
-                </div>
-        
-                <div class="product-info">
-                    <p class="medicineExplaination">${categorypath[i].info}</p>
-                </div>
+            <div class="product-price">
+                <p class="Price">RS.${categorypath[i].priceCents}.00</p>
+            </div>
+    
+            <div class="product-info">
+                <p class="medicineExplaination">${categorypath[i].info}</p>
+            </div>
 
-                <div class="quantity-selector">
-                    <form>
-                    <p>Quantity:</p>
-                    <input type="number" id="quantity-${i}" class="quantity-input" value="1" min="1">
-                    </form>
-                </div>
-        
-                <button class="addToCartBtn">
-                    Add to cart
-                </button>
-            </div>`;
-        }
+            <div class="quantity-selector">
+                <label for="quantity-${i}">Quantity:</label>
+                <input type="number" id="quantity-${i}" class="quantity-input" value="1" min="1">
+            </div>
     
+            <button class="addToCartBtn" data-index="${i}">
+                Add to cart
+            </button>
+        </div>`;
+}
+
         // Add the products to the current category container
         document.getElementById(`category-${j}`).innerHTML = categoryHTML;
     }
