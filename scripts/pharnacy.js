@@ -191,7 +191,7 @@ async function printStuff(){
         `;
     
         let categoryHTML = ''; // Temporary container for products in this category
-    
+        console.log(categorypath);
         // Loop through the Analgesics array and create product HTML
         for (let i = 0; i < categorypath.length; i++) {
     categoryHTML += `
